@@ -136,8 +136,10 @@ header div {
 	padding: 2rem;
 }
 
-header.call-to-action {
-	flex-direction: row;
+.call-to-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 header h1 {
