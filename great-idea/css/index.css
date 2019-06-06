@@ -63,4 +63,271 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+body {
+}
+
+.container {
+	background: white;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 6rem 0;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+hr {
+	border: 1px solid black;
+}
+
+/* Nav */
+
+nav {
+	position: fixed;
+	display: flex;
+	top: 0;
+	width: 900px;
+	text-align: center;
+	background: white;
+	padding: 1rem 0;
+	margin: 0 auto;
+	justify-content: space-around;
+	box-shadow: 0 5px 5px grey;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	display: flex;
+	border: 1px solid white;
+}
+
+nav li a {
+	padding: 0.5rem 1.5rem;
+}
+
+nav li:hover {
+	border: 1px solid black;
+	box-sizing: border-box;
+	transition: 2s;
+}
+
+.active {
+	background: black;
+	color: white;
+}
+
+nav img {
+	padding: 0 0 0 4rem;
+}
+
+/* Home Header */
+
+header {
+	display: flex;
+	width: 100%;
+	padding: 0 3rem;
+}
+
+header div {
+	padding: 2rem;
+}
+
+.call-to-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+header button {
+	border: 1px solid black;
+	background: none;
+	min-width: 40%;
+	margin: 0 30%;
+	padding: 0.5rem 1rem;
+}
+
+/* Home Content */
+
+.home section:first-child {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.home section:first-child article {
+	max-width: 49%;
+	box-sizing: border-box;
+	margin: 2rem auto;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.home section:last-child {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.home section:last-child article {
+	max-width: 30%;
+	box-sizing: border-box;
+	margin: 2rem auto;
+}
+
+
+/* Services Content */
+.services-header-img {
+	width: 100%;
+}
+
+.page-header {
+	margin: 2rem 0;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.boxes section{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.boxes article {
+	border: 1px solid black;
+	background: gainsboro;
+	margin: 2rem 0;
+	padding: 1.5rem;
+	width: 45%;
+}
+
+.boxes article button {
+	background: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 0.5rem 1.5rem;
+	margin-top: 1rem;
+	font-size: 0.7rem;
+}
+
+/* Facts */
+.facts {
+	display: flex;
+	justify-content: space-between;
+}
+.facts div{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	width: 45%;
+}
+
+.facts ul{
+	list-style-type: square;
+	margin-left: 1rem;
+}
+.facts ul li {
+	padding: 0.5rem;
+}
+
+/* About */
+
+.about{
+	display: flex;
+}
+
+.about div {
+	display: flex;
+	padding-left: 2rem;
+}
+
+.about img {
+	align-self: center;
+}
+
+.about article{
+	width: 100%;
+}
+
+/* Footer */
+
+footer {
+	margin: 2rem;
+}
+footer span {
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.container{
+		padding: 0;
+	}
+	nav {
+		width: 100%;
+		position: relative;
+		flex-direction: column-reverse;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	header {
+		flex-direction: column;
+	}
+	header img {
+		width: 100%;
+	}
+	.home section:first-child {
+		display: block;
+	}
+	.home section:first-child article {
+		max-width: 100%;
+
+	}
+	.home section:last-child {
+		display: block;
+	}
+	.home section:last-child article {
+		max-width: 100%;
+
+	}
+	.boxes section {
+		display: block;
+	}
+	.boxes section article {
+		width: 100%;
+
+	}
+	.facts {
+		flex-direction: column-reverse;
+	}
+	.facts div {
+		margin: 2rem;
+	}
+	.about {
+		flex-direction: column;
+	}
+	.about div {
+		padding-left: 0;
+		margin: 0 auto;		
+	}
+  }
